@@ -18,7 +18,7 @@ Note: I used a Particle Photon in this project, but I think the mechanism can be
 ## Set Up the Google Docs Side
 Please follow the instructions on [Directions for Google Sheets Pt II.md](./Directions for Google Sheets Pt II.md). In particular, follow ONLY these two sections:
 
-**"The sheet"**
+**"The sheet"**  
 **"The script"**
 
 ## Set Up your Hardware to Push Data - Particle's Case
@@ -38,10 +38,11 @@ full url: what you get from google docs (example: https://script.google.com/macr
 
 method: POST
 
-form (one way to look at it): key=name value={{my-name}}
+form (one way to look at it): `key=name value={{my-name}}`
 
 form in JSON (another way to look at it):
 
+```
 {
   "name": "{{my-name}}"
 }
@@ -50,15 +51,15 @@ headers: "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
 include defaults: no
 
 Enforce SSL: yes
+```
 
 Here's a screenshot of the webhook:
 
 STEP 2: the firmware
 
-Then in your firmware, add a line like this one:
-
-String tempMessage = "Your garage door is opening";
-Particle.publish("googleDocs", "{\"my-name\":\"" + tempMessage + "\"}", 60, PRIVATE);
+Then in your firmware, add a line like this one:  
+`String tempMessage = "Your garage door is opening";
+Particle.publish("googleDocs", "{\"my-name\":\"" + tempMessage + "\"}", 60, PRIVATE);`  
 Note: I'm using a dynamic custom field feature on webhooks that I learned in this discussion. You can read a bit more in this tutorial (search for mustache since the link seems not to work perfectly).
 
 STEP 3: verify the console logs
