@@ -1,4 +1,4 @@
-As with [Directions for Google Sheets Pt I.md](./Directions for Google Sheets Pt I.md), I've copied these directions from the web, this time from http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/. As previously described, there are two critical sections from that resource which must be followed:
+As with [Directions-for-Google-Sheets-PtI.md](./Directions-for-Google-Sheets-PtI.md), I've copied these directions from the web, this time from http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/. As previously described, there are two critical sections from that resource which must be followed:
 
 **"The sheet"**  
 **"The script"**
