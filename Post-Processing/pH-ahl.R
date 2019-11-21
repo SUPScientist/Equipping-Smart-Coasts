@@ -15,7 +15,7 @@ CSVFILE <- paste0(wd,"pH-MS.csv")
 
 drive_download(
   type = "xlsx",
-  file = as_id("19jxQzqJa_B5zZJJmd6LmJDA0utKn0NTWoeNK_HkOse4"),
+  file = as_id("THIS_GOOGLE_SHEET_ID"),
   path <- XLFILE,
   overwrite = TRUE
 )
