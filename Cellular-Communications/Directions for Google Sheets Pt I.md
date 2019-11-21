@@ -16,7 +16,7 @@ The pull mechanism is ideal when your hardware might be sleeping from time to ti
 Note: I used a Particle Photon in this project, but I think the mechanism can be helpful with other hardware in general, like Arduinos and Raspberry Pies.
 
 ## Set Up the Google Docs Side
-Please follow the instructions on [Directions for Google Sheets Pt II.md](./Directions for Google Sheets Pt II.md). In particular, follow ONLY these two sections:
+Please follow the instructions on [Directions-for-Google-Sheets-PtII.md](./Directions-for-Google-Sheets-PtII.md). In particular, follow ONLY these two sections:
 
 **"The sheet"**  
 **"The script"**
